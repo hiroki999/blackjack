@@ -1,0 +1,206 @@
+/*  
+black jack の基本cssファイル
+2015/08/19 作成
+
+*/
+
+@charset "UTF-8";
+
+/* リセット */
+fieldset, img{
+  border: 0 none;
+}
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+address, caption, cite, code, dfn, em, th, var{
+  font-style: normal;
+  font-weight: normal;
+}
+ol, ul{
+  list-style: outside none none;
+}
+.separate, .floatingw, legend{
+  display: none;
+}
+button{
+  cursor: pointer;
+}
+
+table{
+  font-size: inherit;
+}
+pre, code, kbd, samp, tt{
+  font-family: 'Roboto Condensed', sans-serif;
+  line-height: 99%;
+}
+h1, h2, h3, h4, h5{
+  font-size: 100%;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, button, p, blockquote{
+  margin: 0;
+  padding: 0;
+}
+
+/* 基本レイアウト */
+
+.container{
+  width: 980px;
+  margin: 0 auto;
+}
+
+.title{
+  font-size:32px;
+  margin: 32px;
+}
+
+.main-container{
+  height: 700px; /* test */
+  padding: 100px;
+  color: #000000;
+  background-color: #00FF00;
+}
+
+.card-table{
+}
+
+.dealers-hands{
+}
+
+.message-container{
+  height: 150px;
+}
+
+.message h2{
+  font-size:32px;
+}
+
+.back{
+  float: right;
+}
+
+.back:after{
+  content: '';
+  clear: both;
+}
+
+.your-hands{
+}
+
+.card{
+  width: 100px;
+  height: 150px;
+  display:none;
+}
+
+.dummy{
+  display: inline-block;
+}
+
+.button-container{
+  margin-top: 50px;
+}
+
+.event-button{ 
+  background-color: #ff0000;
+  border-color: #ffffff;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 2px;
+  color: #ffffff;
+  font-size: 18px;
+  height: 30px;
+  padding: 0;
+  text-align: center;
+  width: 100px;
+}
+
+.event-button:hover{
+  background-color: #000000;
+}
+
+.event-button:active{
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.button1{
+  
+}
+
+.button2{
+  display:none;
+}
+
+.message{
+  display: inline-block;
+  text-align: center;
+}
+
+.message h2{
+  margin: 30px 120px;
+  font-size:32px;
+}
+
+.chip-table{
+  margin-top: 40px;
+  width: 416px;
+  height: 161px;
+  float: right;
+  color: #000;
+  font-size: 32px;
+  text-align: center;
+}
+
+.number-of-chips {
+  
+}
+
+
+.chip-table:after{
+  clear: both;
+}
+
+.bet{
+  position: relative;
+  display: inline-block;
+  width: 128px;
+  height: 128px;
+  margin-right: 20px;
+  background-image: url('../img/chip6.png');
+  background-size: cover;
+}
+
+.chips{
+  position: relative;
+  display: inline-block;
+  width: 128px;
+  height: 161px;
+  background-image: url('../img/chip5.png');
+  background-size: cover;
+}
+
+.number-of-chips{
+  position: absolute;
+  top: -40px;
+  left: 47px;
+  font-size:32px;
+  color: #FFF;
+}
+
+.number-of-betted-chips{
+  position: absolute;
+  top: -70px;
+  left: 47px;
+  font-size: 32px;
+  color: #FFF;
+}
+
+.footer-text-container{
+  margin-top: 5px;
+  color: #FFFFFF;
+  background-color:#222222;
+  text-align: center;
+}
+

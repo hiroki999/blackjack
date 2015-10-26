@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <script type="text/javascript" src="../js/black_jack.js"></script>
+    <script type="text/javascript">
+      var test = [1, 2, 3, 4, 5];
+      var hash1 = {apple: 'Mac', microsoft: 'windows', nothing: 'No'};
+      
+      var print_a = function(array) {
+        result = '';
+        for (var i in array) {
+          document.writeln(array[i]);
+        }
+        document.write('<br>');
+      }
+      
+      var test_cards = function () {
+        // initCard のテスト
+        var myDeck = initCard();
+        for (var i = 0; i < myDeck.length; i++) {
+          document.write(myDeck[i].img + '<br>');
+        }
+      }
+
+    var sum = function(array) {
+       return array.reduce(function(a, b) {
+        return a += b;
+      }, 10);
+    }
+
+    var sum2 = function(array) {
+      return array.reduce(function(a, b) {
+        return a + b[1];
+      }, 0);
+    }
+    </script>
+  </head>
+  <body>
+    <main role="main">
+      <script type="text/javascript">
+        document.write('<h2>Test</h2>');
+        print_a(test);
+        var test2 = test;
+        test2[2] = 19999;
+        print_a(test);
+        print_a(hash1);
+        test_cards();
+        var b = sum([1, 2, 3]);
+        var c = [[1,2], [3, 4], [5, 6]];
+        var d = sum2(c);
+        document.write(b + '<br>');
+        document.write(sumHands(myDeck));
+        document.write(d);
+      </script>
+    </main>
+  </body>
+</html>
